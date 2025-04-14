@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOAL</title>
+    <style>
+
+            .box1{
+                width: 80%;
+                height: 450px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: lightgrey;
+                border-radius: 8px;
+
+                background-image: url("bgfo.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .goals{
+                position: relative;
+                top: -90px;
+                left: 100px;
+                font-size: 20px;
+                color: white;
+            }
+
+            .f_content{
+                text-align: center;
+                position: relative;
+                top: -50px;
+                color: antiquewhite;
+            }
+
+            .s_content{
+                text-align: center;
+                position: relative;
+                top: -50px;
+                color: antiquewhite;
+            }
+
+            .home{
+                text-align: right;
+                position: absolute;
+                bottom: 70px;
+                right: 230px;
+                font-size: 10px;
+                text-decoration: underline;
+                cursor: pointer;
+                color: white;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .home:hover {
+                background-color: transparent;
+                color: white;
+                transform: scale(1.05);
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .goal_logo {
+                    border-radius: 50% 10% 50% 10%;
+                    display: flex; 
+                    justify-content: center; 
+                    align-items: center; 
+                    background: linear-gradient(45deg, #4e6af3, #00b4d8); 
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+                    width: 90px;
+                    height: 90px;
+                
+            }
+
+            .goal_logo:hover {
+                    transform: scale(1.1); 
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+            }
+
+            .icon {
+                    width: 90px;
+                    height: 90px; 
+                    border-radius: 50%; 
+                    object-fit: contain;
+            }
+    </style>
+</head>
+
+    <body>
+        <div class="box1">
+
+            <div class="goal_logo">
+                <img class="icon" src="goal_logo.png" alt="logo" width="90px" height="90px">
+                </div>
+
+            <div class="goals">
+            <h1>GOALS</h1>
+            </div>
+
+            <div class="f_content">
+                <p>As I continue my journey in education and personal growth, I am focused on enhancing my 
+                    <br>skills in web and game development. I aim to deepen my technical expertise and create 
+                    <br>interactive, user-friendly platforms that will contribute to the tech industry. Networking is also 
+                    <br>a key goal, as I want to connect with professionals in the field, attend industry events, and 
+                    <br>collaborate with others to broaden my knowledge and perspectives.
+                </p>
+            </div>
+
+            <div class="s_content">
+                <p>In addition to my technical aspirations, I strive to make a meaningful impact with my work. 
+                    <br>My long-term goal is to pursue graduate studies to further my understanding of technology and 
+                    <br>its applications. Ultimately, I envision myself in a leadership role within the tech industry, 
+                    <br>where I can innovate, mentor, and guide others to make a positive difference in the world 
+                    <br>through technology.
+                </p>
+            </div>
+
+            <div class="home" onclick="goHome()">
+                <h2>HOME</h2>
+            </div>
+            
+            <script>
+                function goHome() {
+                    window.location.href = 'portfolio.html'; 
+                }
+            </script>
+
+
+
+    </body>
+</html>

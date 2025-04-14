@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+            header {
+                position: fixed;
+                top: 0; 
+                right: 110px;
+                padding: 5px 355px;
+                border-radius: 5px;
+                background-color: black;
+                z-index: 1000; 
+            }
+
+            nav {
+                display: flex;
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                color: whitesmoke;
+                text-decoration: none;
+                border-radius: 10px;
+                font-size: 20px;
+                transition: background-color 0.3ss, transform 0.2s;
+                padding: 10px 10px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            nav a:hover {
+                background-color: grey;
+                transform: scale(1.1);
+            }
+
+            .box1{
+                width: 80%;
+                height: 450px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: lightgrey;
+                border-radius: 8px;
+
+                background-image: url("bgf.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+            }
+
+            #home h1{
+                position: relative;
+                top: 100px;
+                right: 100px;
+                text-align: right;
+                line-height: 45px;
+                font-size: 50px;
+                color: white;
+            }
+
+            img{
+                position: absolute;
+                left: 280px;
+                top: 70px;
+                
+                padding-bottom: 30px;
+                border-radius: 50%;
+            }
+
+            #home p{
+                position: relative;
+                right: 105px;
+                top: 60px;
+                font-size: 15px;
+                text-align: right;
+                color: antiquewhite;
+                
+            }
+
+            .box2 {
+                position: relative; 
+                width: 80%;
+                height: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: lightgrey;
+                border-radius: 8px;
+
+                background-image: url("bgs.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .bottom-right-container button {
+                position: relative;
+                top: 40px;
+                left: 110px;
+                background-color: transparent;
+                border: none;
+                font-size: 12px;
+                text-decoration: underline;
+                margin: 5px;
+                color: white;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif ;
+                cursor: pointer;
+            }
+
+
+            #about h1{
+           
+                font-size: 40px;
+                position: relative;
+                top: 30px;
+                left: 400px;
+                color:white
+            }
+
+            .first_p{
+                font-size: 15px;
+                position: relative;
+                top: 10px;
+                left: 400px;
+                color: antiquewhite;
+            }
+
+            .box3{
+                width: 80%;
+                height: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: lightgrey;
+                border-radius: 8px;
+                background-image: url("bgt.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .f_p{
+                position: relative;
+                right: 350px;
+                top: 150px;
+                text-align: center;
+                color: antiquewhite;
+            }
+
+            .s_p{
+                position: relative;
+                top: 80px;
+                text-align: center;
+                color: antiquewhite;
+            }
+
+            .fi_p{
+                position: relative;
+                text-align: center;
+                left: 350px;
+                bottom: 150px;
+                color: antiquewhite;
+                
+            }
+
+            .t_p{
+                position: relative;
+                text-align: center;
+                top: 250px;
+                right: 245px;
+                color: antiquewhite;
+                
+            }
+
+            .fo_p{
+                position: relative;
+                text-align: center;
+                top: 180px;
+                left: 200px;
+                color: antiquewhite;
+            }
+
+            #skills h1{
+                text-align: center;
+                font-size: 50px;
+                margin-top: 0px;
+                color: white;
+            }
+
+            .footer{
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 50px;
+                width: 80%;
+                margin: 0 auto; 
+                height: 70px;
+            }
+
+            #contact h1{
+                text-align: right;
+                position: relative;
+                right: 200px;
+                
+            }
+
+            .f_c{
+                text-align: left;
+                position: relative;
+                bottom: 70px;
+                left: 40px;
+                color: antiquewhite;
+            }
+            
+            .s_c{
+                text-align: left;
+                position: relative;
+                bottom: 70px;
+                left: 40px;
+                color: antiquewhite;
+            }
+
+            .t_c{
+                text-align: left;
+                position: relative;
+                bottom: 70px;
+                left: 40px;
+                color: antiquewhite;
+            }
+
+            .custom-shape {
+                background: linear-gradient(135deg, #4e6af3, #00b4d8);
+                width: 250px;
+                height: 250px;
+                border-radius: 50% 10% 50% 10%; 
+                position: absolute;
+                top: 80px;
+                left: 70px;
+                padding: 10px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+            .custom-shape:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            }
+
+            .icon {
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                top: -10px;
+                left: 0px;
+                object-fit: contain;
+            }
+
+
+            .logo_l{
+                position: absolute;
+                top: 1000px;
+                left: -60px;
+            }
+
+            .logo_a{
+                position: absolute;
+                top: 1000px;
+                left: 285px;
+            }
+
+            .logo_p{
+                position: absolute;
+                top: 1000px;
+                left: 630px;
+            }
+            
+            .logo_t{
+                position: absolute;
+                top: 1250px;
+                left: 40px;
+            }
+
+            .logo_c{
+                position: absolute;
+                top: 1250px;
+                left: 480px;
+            }  
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="box1">
+    <section id="home">
+    <img src="pic1.png" alt="profile"/>
+    <h1>CUENTAS,<br> EXCELZIN JARED</h1>
+    <p><em>Passionate IT student eager to explore the world of 
+        <br>technology and innovation. <br>
+        Currently honing my skills in coding, problem-solving, 
+        <br> and software development.</em></p>
+    </section>
+    </div>
+    
+    <div class="box2">
+    <section id="about">
+
+
+        
+        <div class="custom-shape">
+                <img class="icon" src="nobg_about_logo.png" alt="logo" width="300px" height="300px">
+        </div>  
+    
+
+        <h1>ABOUT EXCELZIN:</h1>
+      
+        
+        <div class="first_p">
+        <p>Excelzin Jared Sales Cuentas is a second-year IT student at <br>
+            Pamantasan ng Lungsod ng San Pablo. She plans to major in 
+            <br>web and game development to learn how websites and games 
+            <br>are made, with hopes of creating her own game and website 
+            <br>one day.</p>
+
+        <div class="second_p">
+        <p>With her passion for technology, leadership experience, and 
+            <br>commitment to helping others, Excelzin is on the path to 
+            <br>achieving her goals and making a positive impact on her 
+            <br>community.</p>
+        </div>
+
+        <div class="bottom-right-container">
+            <button onclick="goToPage('ach.html')">ACHIEVEMENTS</button>
+            <button onclick="goToPage('goal.html')">GOALS</button>
+            <button onclick="goToPage('phil.html')">PHILOSOPHY</button>
+        </div>
+        
+        <script>
+            function goToPage(page) {
+                window.location.href = page;
+            }
+        </script>
+
+    </section>
+    </div>
+    
+    <div class="box3">
+    <section id="skills">
+        
+        <h1>SKILLS</h1>
+
+        <div class="logo_l">
+        <img src="icon_l.png" alt="logo_l" width="140px" height="140px">
+        </div>
+
+        <div class="logo_a">
+        <img src="icon_a.png" alt="logo_a" width="140px" height="140px">
+        </div>
+
+        
+        <div class="logo_p">
+        <img src="icon_p.png" alt="logo_p" width="140px" height="140px">
+        </div>
+
+        <div class="logo_t">
+        <img src="icon_t.png" alt="logo_t" width="140px" height="140px">
+        </div>
+
+        <div class="logo_c">
+        <img src="icon_c.png" alt="logo_c" width="140px" height="140px">
+        </div>
+        
+
+        <div class="f_p">
+        <p><b>Leadership:</b> <br> from being a consistent class <br>officer and planning activities for NSRC.</p>
+        </div>
+       
+        <div class="s_p">
+        <p><b>Adaptability: </b><br> Handling different roles and tasks <br> throughout your academic and NSRC <br>involvement.</p>
+        </div>
+
+        <div class="t_p">
+        <p><b>Teamwork and Collaboration: </b><br> Gained from working with others in both <br>academic and extracurricular settings.</p>
+        </div>
+        
+        <div class="fo_p">
+        <p><b>Communication: </b><br> Developed through roles as a class officer <br>and in planning community activities.</p>
+        </div>
+
+        <div class="fi_p">
+        <p><b>Problem-solving:</b> <br> Honed through applying <br>creative solutions to both technical and <br>organizational challenges.</p>
+        </div>
+
+    </section>
+    </div>
+    
+    <div class="footer">
+    <footer>
+
+    <section id="contact">
+        <h1>CONTACT</h1>
+
+        <div class="lbox">
+        
+        <div class="f_c">
+        <p>Email: <a href="mailto:cuentasjared@gmail.com">cuentasjared@gmail.com</a></p>
+        </div>
+
+        <div class="s_c">
+        <p>Phone Number: 09610786808</p>
+        </div>
+        
+        <div class="t_c">
+        <p>Facebook: <a href="https://www.facebook.com/JaredSalesCuentas" target="_blank">Jared Sales Cuentas</a></p>
+        </div>
+
+    </section>
+    </div>
+    </footer>
+    </body>
+</html>

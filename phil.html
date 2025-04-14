@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHILOSOPHY</title>
+    <style>
+
+
+            .box1{
+                width: 80%;
+                height: 450px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: lightgrey;
+                border-radius: 8px;
+
+                background-image: url("bgfo.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .phil{
+                position: relative;
+                top: -90px;
+                left: 100px;
+                font-size: 20px;
+                color: white;
+            }
+
+            .f_content{
+                text-align: center;
+                position: relative;
+                top: -50px;
+                color: antiquewhite;
+            }
+
+            .s_content{
+                text-align: center;
+                position: relative;
+                top: -50px;
+                color: antiquewhite;
+            }
+
+            .home{
+                text-align: right;
+                position: absolute;
+                bottom: 70px;
+                right: 230px;
+                font-size: 10px;
+                text-decoration: underline;
+                cursor: pointer;
+                color: white;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .home:hover {
+                background-color: transparent;
+                color: white;
+                transform: scale(1.05);
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .phil_logo {
+                    border-radius: 50% 10% 50% 10%;
+                    display: flex;
+                    justify-content: center; 
+                    align-items: center; 
+                    background: linear-gradient(45deg, #4e6af3, #00b4d8);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+                    width: 90px;
+                    height: 90px;
+                
+            }
+
+            .phil_logo:hover {
+                    transform: scale(1.1); 
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+            }
+
+            .icon {
+                    width: 90px; 
+                    height: 90px; 
+                    border-radius: 50%; 
+                    object-fit: contain;
+            }
+    </style>
+</head>
+
+    <body>
+        <div class="box1">
+
+            <div class="phil_logo">
+                <img class="icon" src="phil_logo.png" alt="logo" width="90px" height="90px">
+                </div>
+
+            <div class="phil">
+            <h1>PHILOSOPHY</h1>
+            </div>
+
+            <div class="f_content">
+                <p>I believe in the power of continuous learning and personal growth. Every challenge is an 
+                    <br>opportunity to improve, and I strive to apply my skills purposefully to create meaningful 
+                    <br>solutions that address real-world problems. Technology, for me, is a tool to make a 
+                    <br>positive impact, and I aim to use it to drive change.</p>
+            </div>
+
+            <div class="s_content">
+                <p>Collaboration, integrity, and empathy are key principles that guide my work. I believe in 
+                    <br>the strength of teamwork and the importance of diverse perspectives. Acting with honesty 
+                    <br>and accountability is vital to building trust, and I am committed to using my skills to make 
+                    <br>a lasting, positive impact in the world.
+                </p>
+            </div>
+
+            <div class="home" onclick="goHome()">
+                <h2>HOME</h2>
+            </div>
+            
+            <script>
+                function goHome() {
+                    window.location.href = 'portfolio.html'; 
+                }
+            </script>
+        </div>
+
+    </body>
+</html>
